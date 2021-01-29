@@ -20,11 +20,11 @@ public class Linterna : MonoBehaviour
         {
             if(Enabled)
             {
-                linterna.SetActive(Enabled);
                 Enabled = false;
-            }else {
                 linterna.SetActive(Enabled);
+            }else {
                 Enabled = true;
+                linterna.SetActive(Enabled);
             }
         }
     }
