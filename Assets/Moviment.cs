@@ -27,9 +27,8 @@ public class Moviment : MonoBehaviour
         
     }
     void jump(){
-    if(grounded==true){
-        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, fuerzasalto),ForceMode2D.Impulse);
-    }   
-   
+        if(grounded==true){
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, fuerzasalto),ForceMode2D.Impulse);
+        }   
     }
 }

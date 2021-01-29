@@ -6,6 +6,7 @@ public class MovimientoFondo : MonoBehaviour
 {
     public GameObject camara;
 
+    public float velocityOffset = 1f;
     private Renderer _renderer;
 
     private void Start()
@@ -14,7 +15,8 @@ public class MovimientoFondo : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        float h = Input.GetAxis("Horizontal");
         transform.position = new Vector3(camara.transform.position.x, 0, transform.position.z);
-        _renderer.material.mainTextureOffset = new Vector2(camara.transform.position.x, 0);
+        _renderer.material.mainTextureOffset = _renderer.material.mainTextureOffset + new Vector2(velocityOffset* Time.deltaTime * h, 0);
     }
 }
