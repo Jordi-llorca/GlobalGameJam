@@ -249,4 +249,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
-  velocityOffset: 1
+  velocityOffset: 0.7
