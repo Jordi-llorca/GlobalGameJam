@@ -11,6 +11,8 @@ public class PlayerPos : MonoBehaviour
 
     public bool muerte;
     void Start(){
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         ll = GameObject.FindGameObjectWithTag("LL").GetComponent<LevelLoader>();
         transform.position = gm.lastCheckPointPos;
