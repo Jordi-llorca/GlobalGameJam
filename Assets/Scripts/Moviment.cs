@@ -6,6 +6,7 @@ public class Moviment : MonoBehaviour
 {
     // Start is called before the first frame update
     Rigidbody2D rb;
+    private Animator anim;
     void Start()
     {
         rb= GetComponent<Rigidbody2D>();
@@ -19,6 +20,7 @@ public class Moviment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         float h=Input.GetAxis("Horizontal");
         andando = h != 0;
         if (andando && !prevandando){

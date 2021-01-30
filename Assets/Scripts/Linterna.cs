@@ -7,7 +7,7 @@ public class Linterna : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject linterna;
-    private bool Enabled;
+    public bool Enabled;
     void Start()
     {
         Enabled = true;
