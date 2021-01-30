@@ -35,10 +35,10 @@ public class MovPlat: MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.collider.tag=="Player"){
-               
-              
+            if (collision.collider.tag=="Player")
+            {
                 collision.collider.transform.SetParent(transform);
+                
             }
         }
          private void OnCollisionExit2D(Collision2D collision)
@@ -46,6 +46,7 @@ public class MovPlat: MonoBehaviour
             if (collision.collider.tag=="Player")
             {
                 collision.collider.transform.SetParent(null);
+                collision.collider.GetComponent<Moviment>().grounded=false;
             }
         }
 }
