@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 363288121}
   - component: {fileID: 363288122}
-  m_Layer: 0
+  - component: {fileID: 1069479231}
+  m_Layer: 8
   m_Name: Linterna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1069479231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363288120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ac1b201c6335f47bd33a6148748945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 7
+  matar: {fileID: 1560661028224968019, guid: 1a5d746dfba94364881eab8a94114a39, type: 3}
 --- !u!1 &912106046
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912106048}
   - component: {fileID: 912106047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: linterna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,13 +121,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912106046}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071874, w: 0.7070262}
-  m_LocalPosition: {x: 2.980464, y: 0.0029098138, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -1.9, y: 0, z: 0}
   m_LocalScale: {x: 39.75454, y: 6.871707, z: 1}
   m_Children: []
   m_Father: {fileID: 363288121}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.202}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &912106047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,19 +144,19 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.39
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 39d65e5700000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 17.55
-  m_PointLightOuterAngle: 17.55
+  m_PointLightInnerAngle: 32.81
+  m_PointLightOuterAngle: 32.81
   m_PointLightInnerRadius: 0.0809978
-  m_PointLightOuterRadius: 9.866283
+  m_PointLightOuterRadius: 8.436176
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -165,7 +180,7 @@ GameObject:
   - component: {fileID: 8302454931802634107}
   - component: {fileID: 8302454931802634108}
   - component: {fileID: 8302454931802634109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +254,7 @@ GameObject:
   - component: {fileID: 8302454932202072102}
   - component: {fileID: 3811735009026311115}
   - component: {fileID: 1726650770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jugador
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -386,6 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db09f81341d60047bdd8cb679da3d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  to_die_time: 0.5
+  muerte: 0
 --- !u!114 &1726650770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,4 +415,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d07ee1deb64e04390806836cc76a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linterna: {fileID: 912106046}
+  linterna: {fileID: 363288120}
