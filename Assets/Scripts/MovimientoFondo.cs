@@ -7,6 +7,7 @@ public class MovimientoFondo : MonoBehaviour
     public GameObject camara;
 
     public float velocityOffset = 1f;
+    public float offset;
     private Renderer _renderer;
     private Vector3 prevPos;
     private void Start()
@@ -16,7 +17,7 @@ public class MovimientoFondo : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.position = new Vector3(camara.transform.position.x, 0, transform.position.z);
+        transform.position = new Vector3(camara.transform.position.x, offset, transform.position.z);
         float res = transform.position.x - prevPos.x;
         if (res != 0)
         {
