@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Antipolilla : MonoBehaviour
 {
+    public bool sound;
     public Animator transition;
     private PlayerPos player;
 
@@ -17,6 +18,7 @@ public class Antipolilla : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPos>();
         iluminado = false;
+        sound = true;
     }
     void FixedUpdate()
     {
@@ -25,7 +27,7 @@ public class Antipolilla : MonoBehaviour
         if (hit.collider && !iluminado)
         {
             Debug.DrawRay(transform.position + new Vector3(offsetX, offsetY, 0), transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
-            FindObjectOfType<AudioManager>().Play("Antipolilla");
+            if (sound) { FindObjectOfType<AudioManager>().Play("Antipolilla"); sound = false; }
             transition.SetTrigger("Ataque");
             player.muerte = true;
         } else {
