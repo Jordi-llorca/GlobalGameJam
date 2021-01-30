@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4565115409799748566
+--- !u!1001 &4804791337692538765
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,38 +10,38 @@ PrefabInstance:
     - target: {fileID: 4279952030460423096, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.048885792
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279952030460423096, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.0064702
+      value: 0.0025752848
       objectReference: {fileID: 0}
     - target: {fileID: 4279952030460423096, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.2955295
+      value: 0.05269093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952030460423096, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.172824
       objectReference: {fileID: 0}
     - target: {fileID: 4279952030460423096, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.48888904
+      value: 0.4070807
       objectReference: {fileID: 0}
     - target: {fileID: 4279952030460423097, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 59acbb05af54f1f40b891dc37a7df55f,
+      objectReference: {fileID: 21300000, guid: 2b7756d5f029d504f9746995ee5c0ff0,
         type: 3}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.42
+      value: 3.710122
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6335421
+      value: 2.413323
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
@@ -91,7 +91,22 @@ PrefabInstance:
     - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Name
-      value: MP22
+      value: MP21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952031292846914, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952031292846914, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4279952031114553336, guid: 3a639c3f1b3efac4fae0139b7ab41c6c, type: 3}
