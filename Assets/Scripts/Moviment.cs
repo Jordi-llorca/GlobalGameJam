@@ -26,9 +26,11 @@ public class Moviment : MonoBehaviour
         if (andando && !prevandando){
             FindObjectOfType<AudioManager>().Play("Walking");
             prevandando = true;
+            anim.SetBool("prevandando",true);
         } else if (!andando) {
             FindObjectOfType<AudioManager>().Stop("Walking");
             prevandando = false;
+            anim.SetBool("prevandando",false);
         }
         transform.Translate(Vector2.right*h*Time.deltaTime*vel);
         
