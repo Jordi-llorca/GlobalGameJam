@@ -12,7 +12,9 @@ public class Linterna : MonoBehaviour
     public bool permitida;
     void Start()
     {
-        Enabled = false;
+       
+        linterna.SetActive(Enabled);
+        
     }
 
     // Update is called once per frame
