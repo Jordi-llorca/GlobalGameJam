@@ -13,7 +13,7 @@ public class LightEnemy : MonoBehaviour
 
         // If it hits something...
         if (hit.collider != null)
-        {    
+        {
             if(hit.collider.tag == "Antipolilla")
             {
                 hit.collider.GetComponent<Antipolilla>().iluminado = true;
@@ -23,6 +23,14 @@ public class LightEnemy : MonoBehaviour
             {
                 hit.collider.GetComponent<AntipolillaAndante>().iluminado = true;
                 Instantiate(matar, transform.position + new Vector3(hit.distance, 0, 0), Quaternion.identity);
+            }
+            if (hit.collider.tag == "Polilla")
+            {
+                hit.collider.GetComponent<PolillaAndante>().iluminado = true;
+            }
+            if (hit.collider.tag == "PolillaTrampa")
+            {
+                hit.collider.GetComponent<PolillaTrampa>().iluminado = true;
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.yellow);
         }
