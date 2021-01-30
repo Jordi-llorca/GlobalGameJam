@@ -5,7 +5,7 @@ using UnityEngine;
 public class Grounded : MonoBehaviour
 {
     GameObject Player;
-    private Animator anim;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {

@@ -7,9 +7,11 @@ public class Moviment : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody2D rb;
     public Animator anim;
+    private float x;
     void Start()
     {
         rb= GetComponent<Rigidbody2D>();
+        x=transform.localScale.x;
     }
     public float vel=5;
     public bool grounded=false;
@@ -33,7 +35,15 @@ public class Moviment : MonoBehaviour
             anim.SetBool("grounded",true);
         }
         transform.Translate(Vector2.right*h*Time.deltaTime*vel);
-        
+        if(h>0)
+        {
+            transform.localScale = new Vector2(x,transform.localScale.y);
+        }else if (h<0)
+        {
+            transform.localScale = new Vector2(-x,transform.localScale.y);
+        }
+
+
         if(Input.GetKeyDown(KeyCode.W))
         {
             jump();
@@ -52,6 +62,7 @@ public class Moviment : MonoBehaviour
         if(grounded==true){
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, fuerzasalto),ForceMode2D.Impulse);
             anim.SetTrigger("Salto");
+            
         }   
     }
 }
