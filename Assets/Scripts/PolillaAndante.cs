@@ -30,12 +30,12 @@ public class PolillaAndante : MonoBehaviour
             if (transform.position.x <= pos1.position.x)
             {
                 transform.localScale = new Vector2(-1, 1);
-                mov *= -1;
+                mov = -1;
             }
             if (transform.position.x >= pos2.position.x)
             {
                 transform.localScale = new Vector2(1, 1);
-                mov *= -1;
+                mov = 1;
             }
         }
         transform.Translate(Vector3.right * -vel * mov * Time.deltaTime);
