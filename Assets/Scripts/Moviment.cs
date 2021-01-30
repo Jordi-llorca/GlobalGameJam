@@ -16,7 +16,7 @@ public class Moviment : MonoBehaviour
     public float fuerzasalto=10f;
 
     private bool andando = false;
-    private bool prevandando = false;
+    public bool prevandando = false;
     // Update is called once per frame
     void Update()
     {
