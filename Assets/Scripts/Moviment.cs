@@ -6,7 +6,7 @@ public class Moviment : MonoBehaviour
 {
     // Start is called before the first frame update
     Rigidbody2D rb;
-    private Animator anim;
+    public Animator anim;
     void Start()
     {
         rb= GetComponent<Rigidbody2D>();
@@ -25,10 +25,12 @@ public class Moviment : MonoBehaviour
         andando = h != 0;
         if (andando && !prevandando){
             FindObjectOfType<AudioManager>().Play("Walking");
-            prevandando = true;
+            anim.SetBool("prevandando",true);
+            anim.SetBool("grounded",true);
         } else if (!andando) {
             FindObjectOfType<AudioManager>().Stop("Walking");
-            prevandando = false;
+            anim.SetBool("prevandando",false);
+            anim.SetBool("grounded",true);
         }
         transform.Translate(Vector2.right*h*Time.deltaTime*vel);
         
@@ -36,11 +38,20 @@ public class Moviment : MonoBehaviour
         {
             jump();
         }
-        
+        if(grounded)
+        {
+            anim.SetBool("salto", false);
+        }
+        if(!grounded)
+        {
+            anim.SetBool("prevandando",false);
+            anim.SetBool("salto", true);
+        }
     }
     void jump(){
         if(grounded==true){
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, fuerzasalto),ForceMode2D.Impulse);
+            anim.SetTrigger("Salto");
         }   
     }
 }
