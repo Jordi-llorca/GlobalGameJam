@@ -11,6 +11,7 @@ TagManager:
   - LL
   - Polilla
   - AntipolillaAndante
+  - PolillaTrampa
   layers:
   - Default
   - TransparentFX

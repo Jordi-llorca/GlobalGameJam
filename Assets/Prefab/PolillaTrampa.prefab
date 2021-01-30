@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3038704522915966408}
   m_Layer: 0
-  m_Name: PolillaAndante 1
+  m_Name: PolillaTrampa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5230469986514248433}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.725, y: -1.92, z: 4.806827}
+  m_LocalPosition: {x: -0.81, y: -1.89, z: 4.806827}
   m_LocalScale: {x: 0.48133978, y: 0.48133978, z: 0.48133978}
   m_Children: []
   m_Father: {fileID: 5230469987965725530}
@@ -231,7 +231,7 @@ MonoBehaviour:
   - {x: -2.0290637, y: -0.62733454, z: 0}
   m_ShapePathHash: -332100406
   m_Mesh: {fileID: 0}
-  m_InstanceId: -437544
+  m_InstanceId: -487498
 --- !u!1 &5230469987965719718
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5230469987965719718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.68, y: 0, z: 59.269672}
+  m_LocalPosition: {x: 9.21, y: 0.09, z: 59.269672}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5230469986514248434}

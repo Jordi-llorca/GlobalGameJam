@@ -7,9 +7,13 @@ public class LightEnemy : MonoBehaviour
     int layerMask = ~(1 << 8);
     public float range;
     public GameObject matar;
+    private float direccion = 1;
+
     void FixedUpdate()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, range, layerMask);
+        float h = Input.GetAxis("Horizontal");
+        if (h != 0) direccion = Mathf.Sign(h);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * direccion, range, layerMask);
 
         // If it hits something...
         if (hit.collider != null)
@@ -17,12 +21,12 @@ public class LightEnemy : MonoBehaviour
             if(hit.collider.tag == "Antipolilla")
             {
                 hit.collider.GetComponent<Antipolilla>().iluminado = true;
-                Instantiate(matar, transform.position + new Vector3(hit.distance, 0, 0), Quaternion.identity);
+                Instantiate(matar, transform.position + new Vector3(hit.distance * direccion, 0, 0), Quaternion.identity);
             }
             if (hit.collider.tag == "AntipolillaAndante")
             {
                 hit.collider.GetComponent<AntipolillaAndante>().iluminado = true;
-                Instantiate(matar, transform.position + new Vector3(hit.distance, 0, 0), Quaternion.identity);
+                Instantiate(matar, transform.position + new Vector3(hit.distance * direccion, 0, 0), Quaternion.identity);
             }
             if (hit.collider.tag == "Polilla")
             {
