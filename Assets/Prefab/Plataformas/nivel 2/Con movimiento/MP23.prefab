@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7562445670638159940}
-  - component: {fileID: 7562445670638159941}
   m_Layer: 0
-  m_Name: MovPlatGrande 1
+  m_Name: MP23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,20 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7562445670638159941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7562445670638159938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ac1b201c6335f47bd33a6148748945, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 0
-  matar: {fileID: 0}
 --- !u!1 &7562445671023854593
 GameObject:
   m_ObjectHideFlags: 0

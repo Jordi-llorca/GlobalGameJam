@@ -33,5 +33,20 @@ public class MovPlat: MonoBehaviour
     {
         Gizmos.DrawLine(pos1.position,pos2.position);
     }
-    
+    /*private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.collider.tag=="Player")
+            {
+                collision.collider.transform.SetParent(transform);
+                
+            }
+        }
+         private void OnCollisionExit2D(Collision2D collision)
+        {
+            if (collision.collider.tag=="Player")
+            {
+                collision.collider.transform.SetParent(null);
+                collision.collider.GetComponent<Moviment>().grounded=false;
+            }
+        }*/
 }
