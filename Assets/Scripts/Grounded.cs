@@ -18,20 +18,30 @@ public class Grounded : MonoBehaviour
         
         
     }
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (collision.collider.tag=="Suelo"){
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.tag=="Suelo"){
                
-                Player.GetComponent<Moviment>().grounded=true;
-                //anim.SetBool("grounded",true);
-            }
+            Player.GetComponent<Moviment>().grounded=true;
+            //anim.SetBool("grounded",true);
         }
-         private void OnCollisionExit2D(Collision2D collision)
+        if (other.gameObject.CompareTag("Platform"))
         {
-            if (collision.collider.tag=="Suelo")
-            {
-                //anim.SetBool("grounded",true);
-                Player.GetComponent<Moviment>().grounded=false;
-            }
+            Player.GetComponent<Moviment>().grounded = true;
+            Player.transform.parent = other.gameObject.transform;
         }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.collider.tag=="Suelo")
+        {
+            //anim.SetBool("grounded",true);
+            Player.GetComponent<Moviment>().grounded=false;
+        }
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            Player.GetComponent<Moviment>().grounded = false;
+            Player.transform.parent = null;
+        }
+    }
 }

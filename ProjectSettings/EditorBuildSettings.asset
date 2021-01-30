@@ -12,6 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Level0.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/PruebaDelia.unity
-    guid: 7e2bfe23999e07d4cabda5f086908e72
+    path: Assets/Scenes/Level1.unity
+    guid: 4751e8bf74295f54e8c9c0f9c1cf01df
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 4f60b7a888595024f8a5cbaccb5e745c
+  - enabled: 1
+    path: Assets/Scenes/levelDelia.unity
+    guid: 5de52603cd556f343ab6e7cdcb2daf84
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: c0f5f8c067e8e1345ae25d90c1f3d756
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 6bef18b1e5361a144802e590d72f74f1
+  - enabled: 1
+    path: Assets/Scenes/PantallaFinal.unity
+    guid: 7b8dec8000c8b9e41a34fc8694db3ab0
   m_configObjects: {}

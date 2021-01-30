@@ -33,6 +33,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 69ffc709aeead014eb2e9eeda9aa66a0,
         type: 3}
+    - target: {fileID: 4279952030460423100, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91,12 +96,12 @@ PrefabInstance:
     - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Name
-      value: "MovPlatPeque\xF1a"
+      value: MP52
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031292846914, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}

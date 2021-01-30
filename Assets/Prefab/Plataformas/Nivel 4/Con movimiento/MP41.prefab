@@ -33,6 +33,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ca3aa08b59acb8b46837a5a74188e5b3,
         type: 3}
+    - target: {fileID: 4279952030460423100, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Name
-      value: "MovPlatPeque\xF1a (1)"
+      value: MP41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a639c3f1b3efac4fae0139b7ab41c6c, type: 3}
