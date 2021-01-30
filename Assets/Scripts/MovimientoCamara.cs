@@ -6,6 +6,7 @@ public class MovimientoCamara : MonoBehaviour
 {
     public GameObject jugador;
     public float offset = 0;
+    private static MovimientoCamara instance;
 
     // 0 limite iquierda  // 1 limite derecha
     public GameObject [] limites = new GameObject [2];

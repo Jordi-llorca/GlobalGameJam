@@ -6,15 +6,27 @@ public class PlayerPos : MonoBehaviour
 {
     private GameMaster gm;
     private LevelLoader ll;
+
+    public float to_die_time;
+
+    public bool muerte;
     void Start(){
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        ll = GameObject.FindGameObjectWithTag("LL").GetComponent<LevelLoader>();
+        ll = GameObject.FindGameObjectWithTag("GM").GetComponent<LevelLoader>();
         transform.position = gm.lastCheckPointPos;
+
+        muerte = false;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)){ //Condicion muerte
-            ll.ReloadLevel();
+        if (muerte){ //Condicion muerte
+            StartCoroutine(Muerte());
         }
+    }
+
+    IEnumerator Muerte()
+    {
+        yield return new WaitForSeconds(to_die_time);
+        ll.ReloadLevel();
     }
 }

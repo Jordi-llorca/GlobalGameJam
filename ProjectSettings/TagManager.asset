@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Suelo
   - GM
+  - Antipolilla
   - LL
   layers:
   - Default
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
