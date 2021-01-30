@@ -19,6 +19,11 @@ public class LightEnemy : MonoBehaviour
                 hit.collider.GetComponent<Antipolilla>().iluminado = true;
                 Instantiate(matar, transform.position + new Vector3(hit.distance, 0, 0), Quaternion.identity);
             }
+            if (hit.collider.tag == "AntipolillaAndante")
+            {
+                hit.collider.GetComponent<AntipolillaAndante>().iluminado = true;
+                Instantiate(matar, transform.position + new Vector3(hit.distance, 0, 0), Quaternion.identity);
+            }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.yellow);
         }
         else

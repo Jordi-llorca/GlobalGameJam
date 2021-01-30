@@ -10,6 +10,7 @@ TagManager:
   - Antipolilla
   - LL
   - Polilla
+  - AntipolillaAndante
   layers:
   - Default
   - TransparentFX
