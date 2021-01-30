@@ -16,8 +16,10 @@ public class Linterna : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            FindObjectOfType<AudioManager>().Play("Linterna");
             if(Enabled)
             {
                 Enabled = false;

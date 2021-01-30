@@ -13,11 +13,21 @@ public class Moviment : MonoBehaviour
     public float vel=5;
     public bool grounded=false;
     public float fuerzasalto=10f;
+
+    private bool andando = false;
+    private bool prevandando = false;
     // Update is called once per frame
     void Update()
     {
         float h=Input.GetAxis("Horizontal");
-        
+        andando = h != 0;
+        if (andando && !prevandando){
+            FindObjectOfType<AudioManager>().Play("Walking");
+            prevandando = true;
+        } else if (!andando) {
+            FindObjectOfType<AudioManager>().Stop("Walking");
+            prevandando = false;
+        }
         transform.Translate(Vector2.right*h*Time.deltaTime*vel);
         
         if(Input.GetKeyDown(KeyCode.W))
