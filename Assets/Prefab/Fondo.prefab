@@ -203,7 +203,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 0}
   offset: 0
-  limites: []
+  limites:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4806328753379987039
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,8 +452,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5802528351106486913}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.02}
-  m_LocalScale: {x: 1.6247715, y: 1, z: 0.95284784}
+  m_LocalPosition: {x: 0, y: 0.221, z: -1.02}
+  m_LocalScale: {x: 1.6247729, y: 1, z: 1.174293}
   m_Children: []
   m_Father: {fileID: 6819883461723180417}
   m_RootOrder: 4

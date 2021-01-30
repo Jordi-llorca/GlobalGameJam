@@ -111,7 +111,6 @@ GameObject:
   - component: {fileID: 4200902755325422180}
   - component: {fileID: 4200902755325422181}
   - component: {fileID: 4200902755325422178}
-  - component: {fileID: 4200902755325422179}
   m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
@@ -203,31 +202,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4200902755325422179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4200902755325422183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 39d65e5700000000
-  m_ShapePath:
-  - {x: -1.8820326, y: -0.7764208, z: 0}
-  - {x: -0.23922682, y: -0.80856097, z: 0}
-  - {x: -0.34428883, y: -0.2964204, z: 0}
-  - {x: -0.9784541, y: 0.46787834, z: 0}
-  - {x: -1.8177521, y: 0.8535616, z: 0}
-  - {x: -2.0477242, y: 0.05712235, z: 0}
-  m_ShapePathHash: -796366617
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 79688
