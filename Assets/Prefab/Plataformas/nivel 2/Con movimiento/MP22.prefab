@@ -91,7 +91,8 @@ PrefabInstance:
     - target: {fileID: 4279952031114553343, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_Name
-      value: "MovPlatPeque\xF1a (1)"
+      value: MP22
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4279952031114553336, guid: 3a639c3f1b3efac4fae0139b7ab41c6c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a639c3f1b3efac4fae0139b7ab41c6c, type: 3}
