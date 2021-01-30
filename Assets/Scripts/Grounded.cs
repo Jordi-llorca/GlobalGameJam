@@ -23,14 +23,14 @@ public class Grounded : MonoBehaviour
             if (collision.collider.tag=="Suelo"){
                
                 Player.GetComponent<Moviment>().grounded=true;
-                anim.SetBool("grounded",true);
+                //anim.SetBool("grounded",true);
             }
         }
          private void OnCollisionExit2D(Collision2D collision)
         {
             if (collision.collider.tag=="Suelo")
             {
-                anim.SetBool("grounded",true);
+                //anim.SetBool("grounded",true);
                 Player.GetComponent<Moviment>().grounded=false;
             }
         }
