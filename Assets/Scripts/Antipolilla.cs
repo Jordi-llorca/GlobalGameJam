@@ -8,7 +8,7 @@ public class Antipolilla : MonoBehaviour
     public Animator transition;
     private PlayerPos player;
 
-    int layerMask = 1 << 8;
+    int layerMask = ~(1 << 9);
     public float range = 4f;
     public float offsetX;
     public float offsetY;
@@ -30,7 +30,7 @@ public class Antipolilla : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (hit.collider && !iluminado)
+        if (hit.collider && !iluminado && hit.collider.tag == "Player")
         {
             Debug.DrawRay(transform.position + new Vector3(offsetX, offsetY, 0), transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
             if (sound) { FindObjectOfType<AudioManager>().Play("Antipolilla"); sound = false; }

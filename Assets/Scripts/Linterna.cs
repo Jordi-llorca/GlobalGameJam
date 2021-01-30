@@ -8,25 +8,31 @@ public class Linterna : MonoBehaviour
     // Start is called before the first frame update
     public GameObject linterna;
     public bool Enabled;
+
+    public bool permitida;
     void Start()
     {
-        Enabled = true;
+        Enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E))
+        if (permitida)
         {
-            FindObjectOfType<AudioManager>().Play("Linterna");
-            if(Enabled)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Enabled = false;
-                linterna.SetActive(Enabled);
-            }else {
-                Enabled = true;
-                linterna.SetActive(Enabled);
+                FindObjectOfType<AudioManager>().Play("Linterna");
+                if (Enabled)
+                {
+                    Enabled = false;
+                    linterna.SetActive(Enabled);
+                }
+                else
+                {
+                    Enabled = true;
+                    linterna.SetActive(Enabled);
+                }
             }
         }
     }

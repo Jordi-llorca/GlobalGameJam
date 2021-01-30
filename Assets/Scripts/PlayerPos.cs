@@ -12,7 +12,7 @@ public class PlayerPos : MonoBehaviour
     public bool muerte;
     void Start(){
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        ll = GameObject.FindGameObjectWithTag("GM").GetComponent<LevelLoader>();
+        ll = GameObject.FindGameObjectWithTag("LL").GetComponent<LevelLoader>();
         transform.position = gm.lastCheckPointPos;
 
         muerte = false;

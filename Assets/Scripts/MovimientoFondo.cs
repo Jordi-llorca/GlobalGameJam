@@ -16,12 +16,12 @@ public class MovimientoFondo : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
-        float h = Input.GetAxis("Horizontal");
         transform.position = new Vector3(camara.transform.position.x, 0, transform.position.z);
-
-        if(prevPos != transform.position) 
-            _renderer.material.mainTextureOffset = _renderer.material.mainTextureOffset + new Vector2(velocityOffset* Time.deltaTime * h, 0);
+        float res = transform.position.x - prevPos.x;
+        if (res != 0)
+        {
+            _renderer.material.mainTextureOffset = _renderer.material.mainTextureOffset + new Vector2(velocityOffset * Time.deltaTime * res, 0);
+        }
 
         prevPos = transform.position;
     }

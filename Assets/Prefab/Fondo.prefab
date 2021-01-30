@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
-  velocityOffset: 0.7
+  velocityOffset: 1.4
 --- !u!1 &5540531212252435971
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
-  velocityOffset: 0.6
+  velocityOffset: 1.2
 --- !u!1 &6819883461723180416
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
-  velocityOffset: 0.5
+  velocityOffset: 1
 --- !u!1 &6819883462001644124
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,4 +579,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
-  velocityOffset: 0.3
+  velocityOffset: 0.6
