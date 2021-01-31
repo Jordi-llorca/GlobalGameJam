@@ -44,7 +44,7 @@ public class Moviment : MonoBehaviour
         }
 
 
-        if(Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
         {
             jump();
         }
