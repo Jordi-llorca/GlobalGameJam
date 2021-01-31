@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
         if(instance == null){
             instance = this;
             DontDestroyOnLoad(instance);
