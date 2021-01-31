@@ -114,9 +114,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5167961, y: -1.2497365}
+  m_Offset: {x: -0.74, y: -2.06}
   serializedVersion: 2
-  m_Radius: 1.0554886
+  m_Radius: 1.68
 --- !u!1 &4176350024342485764
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6577675670456815482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -258,9 +258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6577675670734894141}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AntipolillaAndante
-  m_TagString: Untagged
+  m_TagString: AntipolillaAndante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6577675671302312891}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}

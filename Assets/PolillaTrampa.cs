@@ -36,6 +36,7 @@ public class PolillaTrampa : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            if (sound) { FindObjectOfType<AudioManager>().Play("Antipolilla"); sound = false; }
             player.muerte = true;
         }
     }

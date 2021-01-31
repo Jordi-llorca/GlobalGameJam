@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public static AudioManager instance;
+    public bool end;
+    public float randomSound;
+    private float timer;
 
     void Awake()
     {
@@ -30,7 +33,18 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Play("MainTheme");
-        Play("Birds");
+        if(end) Play("Birds");
+        timer = randomSound;
+    }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if(!end && timer <= 0)
+        {
+            timer = randomSound;
+            Play("GritoMonstruo");
+        }
     }
     public void Play(string name)
     {

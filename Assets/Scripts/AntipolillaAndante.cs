@@ -46,8 +46,14 @@ public class AntipolillaAndante : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            if (sound) { FindObjectOfType<AudioManager>().Play("Antipolilla"); sound = false; }
             transition.SetTrigger("Ataque");
             player.muerte = true;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        sound = true;
     }
 }

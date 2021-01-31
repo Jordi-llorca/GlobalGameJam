@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEditor.Experimental.SceneManagement;
+
 public class Linterna : MonoBehaviour
 {
     // Start is called before the first frame update

@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 2546334447492785976}
   - component: {fileID: 5277601187455087384}
   - component: {fileID: 2645244245499176476}
-  - component: {fileID: -5384486839133161792}
+  - component: {fileID: 5464835579708608916}
   m_Layer: 10
   m_Name: Caja
   m_TagString: Untagged
@@ -160,7 +160,7 @@ MonoBehaviour:
   - {x: -1.3019819, y: 1.2487388, z: 0}
   m_ShapePathHash: 1527093439
   m_Mesh: {fileID: 0}
-  m_InstanceId: 342562
+  m_InstanceId: 28862
 --- !u!50 &5277601187455087384
 Rigidbody2D:
   serializedVersion: 4
@@ -181,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2645244245499176476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -208,21 +208,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6014214, y: 2.5532303}
   m_EdgeRadius: 0
---- !u!255 &-5384486839133161792
-FixedJoint2D:
+--- !u!114 &5464835579708608916
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2546334447492785923}
   m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_DampingRatio: 0
-  m_Frequency: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f109620fdac1054fad9cef7d788b703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

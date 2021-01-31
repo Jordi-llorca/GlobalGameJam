@@ -43,6 +43,7 @@ public class PolillaAndante : MonoBehaviour
         if (iluminado && !previlu){
             vel *= 2;
             previlu = true;
+            transform.localScale = new Vector2(1, 1);
             mov = 1;
         } else if(!iluminado){
             vel = velInicial;
@@ -60,6 +61,7 @@ public class PolillaAndante : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            if (sound) { FindObjectOfType<AudioManager>().Play("Antipolilla"); sound = false; }
             player.muerte = true;
         }
     }
