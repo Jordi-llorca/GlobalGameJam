@@ -6,13 +6,15 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public static AudioManager instance;
+    public static bool inicio;
     public bool end;
     public float randomSound;
     private float timer;
 
+    public void Inicio() { inicio = true; }
     void Awake()
     { 
-        if (instance == null)
+        /*if (instance == null)
             instance = this;
         else
         {
@@ -20,7 +22,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);*/
 
         foreach (Sound s in sounds)
         {
@@ -36,7 +38,7 @@ public class AudioManager : MonoBehaviour
     {
         Play("MainTheme");
         if(end) Play("Birds");
-        if (!end) Play("Ascensor");
+        if (inicio && !end) { Play("Ascensor"); inicio = false; }
         timer = randomSound;
     }
 

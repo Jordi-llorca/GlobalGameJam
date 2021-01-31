@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime = 1;
     public void LoadNextLevel()
     {
+        FindObjectOfType<AudioManager>().Inicio();
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
