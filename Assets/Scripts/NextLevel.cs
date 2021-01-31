@@ -6,7 +6,6 @@ public class NextLevel : MonoBehaviour
 {
     private LevelLoader ll;
     private GameMaster gm;
-    public Transform start;
 
     private void Start()
     {
@@ -18,7 +17,8 @@ public class NextLevel : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ll.LoadNextLevel();
-            gm.lastCheckPointPos = new Vector2(-17, (float) -1.25);
+            FindObjectOfType<AudioManager>().Play("AscensorCerrando");
+            gm.lastCheckPointPos = new Vector2(-15, (float) -1.25);
         }
     }
 }

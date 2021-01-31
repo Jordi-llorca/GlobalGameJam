@@ -34,6 +34,7 @@ public class AudioManager : MonoBehaviour
     {
         Play("MainTheme");
         if(end) Play("Birds");
+        if (!end) Play("Ascensor");
         timer = randomSound;
     }
 
