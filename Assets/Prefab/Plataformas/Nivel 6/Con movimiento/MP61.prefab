@@ -33,6 +33,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: da0beba69dea020438f6f2993fe108a8,
         type: 3}
+    - target: {fileID: 4279952030460423097, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952030460423097, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952030460423097, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6431373
+      objectReference: {fileID: 0}
     - target: {fileID: 4279952030460423100, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_TagString
@@ -41,12 +56,12 @@ PrefabInstance:
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.42
+      value: 22.4
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6335421
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 4279952031114553337, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
         type: 3}
@@ -97,6 +112,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MP61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952031292846914, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279952031292846914, guid: 3a639c3f1b3efac4fae0139b7ab41c6c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a639c3f1b3efac4fae0139b7ab41c6c, type: 3}
